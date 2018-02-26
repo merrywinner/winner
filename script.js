@@ -6,7 +6,7 @@ myApp.controller('myController', ['$scope' , function($scope){
   };
   $scope.onGoogleLogin = function(){
     var params = {
-     'clientid': '288949950778-4h5kmst65rckqpt1ea3t52nbk93jro83.apps.googleusercontent.com',
+     'clientid': '439825098539-4nen3sfvgafs5uqgt706a05rhjl86h6e.apps.googleusercontent.com',
       'cookiepolicy': 'single_host_origin',
       'callback': function(result){
         if (result['status']['signed_in']){
@@ -24,7 +24,7 @@ myApp.controller('myController', ['$scope' , function($scope){
         }
       },
       'approvalprompt':'force',
-      'scope':'https:://www.googleapis.com/auth/plus.login https:://www.googleapis.com/auth/plus.profile.emails.read '
+      'scope':'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read '
     };
     gapi.auth.signIn(params);
   }
